@@ -1,0 +1,25 @@
+.main__about .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.main__about__description, .main__about__image{
+    //width: 50%;
+}
+.main__about__image{
+    //padding: 100px;
+    object-fit: contain;
+    width: 300px;
+}
+
+.main__about__description{
+    width: 400px;
+    padding-right: 50px;
+}
+
+.main__about__description h1{
+    font-size: 50px;
+    font-family: 'Ms Madi', cursive;
+    margin: 0 0 20px;
+}

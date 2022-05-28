@@ -1,0 +1,16 @@
+body *{
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Roboto Flex', sans-serif;
+    color: rgba(112,112,112,1);
+}
+body{
+    margin: 0;
+}
+h1, h2, h3, p{
+    margin: 0;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}

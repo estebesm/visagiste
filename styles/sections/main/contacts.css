@@ -1,0 +1,29 @@
+.main__contacts{
+    //background-image: url("../../../images/main/services-1.webp");
+}
+.main__contacts .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 100px;
+}
+.main__contacts__description{
+    width: 50%;
+    padding: 0 60px;
+}
+.main__contacts__description h3{
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+.main__contacts__description p{
+    font-size: 24px;
+    line-height: 40px;
+}
+.main__contacts__media{
+    width: 50%;
+}
+.main__contacts__media img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}

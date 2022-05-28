@@ -1,0 +1,26 @@
+.main__about-me{
+    background-color: rgba(231,198,189,.15);
+    padding: 40px 0;
+}
+.main__about-me .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__about-me__description{
+    width: 500px;
+    padding: 0 40px;
+}
+.main__about-me__description h1{
+    font-size: 24px;
+    padding: 0 0 10px;
+}
+.main__about-me__description h2{
+    padding-bottom: 5px;
+}
+.main__about-me__media img{
+    display: block;
+    width: 500px;
+    margin-left: 20px;
+    object-fit: contain;
+}

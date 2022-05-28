@@ -1,0 +1,35 @@
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.header__logo{
+    font-family: 'Ms Madi', cursive;
+    font-size: 100px;
+    line-height: 1.2;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 2px solid rgba(231,198,189,1);
+}
+
+.header__icon{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+}
+
+.header__nav-item{
+    display: block;
+    padding: 20px 30px;
+    cursor: pointer;
+    letter-spacing: 1.1px;
+}
+
+.header__nav-item:hover{
+    color: rgba(231,198,189,1);
+}
