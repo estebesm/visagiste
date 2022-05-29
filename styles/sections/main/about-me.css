@@ -43,16 +43,31 @@
 }
 @media (max-width: 476px){
     .main__about-me{
-        padding: 0 0 20px;
+        padding: 0;
+    }
+    .main__about-me .container{
+        padding:  20px 0 0;
+    }
+    .main__about-me__description{
+        padding: 0 10px;
     }
     .main__about-me__description h1{
-        font-size: 18px;
+        font-size: 26px;
         padding: 0;
     }
     .main__about-me__description h2{
-        font-size: 14px;
+        font-size: 24px;
     }
     .main__about-me__description p{
-        font-size: 12px;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+    .main__about-me__media{
+        width: 100%;
+    }
+    .main__about-me__media img{
+        margin: 20px 0 0;
+        width: 100%;
     }
 }

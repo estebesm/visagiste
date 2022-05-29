@@ -65,10 +65,17 @@
     }
 }
 @media (max-width: 476px) {
+    .main__contacts .container{
+        height: auto;
+        padding: 20px 0;
+    }
+    .main__contacts__media{
+        display: none;
+    }
     .main__contacts__description h3{
-        font-size: 18px;
+        font-size: 24px;
     }
     .main__contacts__description p{
-        font-size: 12px;
+        font-size: 18px;
     }
 }

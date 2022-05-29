@@ -33,10 +33,14 @@
         padding: 10px 0;
     }
     .main__salon__description h1{
-        font-size: 18px;
+        font-size: 24px;
+        margin-bottom: 5px;
+        padding-bottom: 0;
     }
     .main__salon__description p{
-        font-size: 12px;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 1px;
     }
     .main__salon__media{
         padding: 10px 0;
