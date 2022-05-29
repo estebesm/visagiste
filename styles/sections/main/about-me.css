@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .main__about-me__description{
     width: 500px;
@@ -23,4 +24,35 @@
     width: 500px;
     margin-left: 20px;
     object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+    .main__about-me__description{
+        width: 400px;
+        padding: 20px 0;
+    }
+    .main__about-me__media img{
+        width: 300px;
+        margin-left: 20px;
+    }
+}
+@media (max-width: 767px){
+    .main__about-me{
+        padding: 20px 0;
+    }
+}
+@media (max-width: 476px){
+    .main__about-me{
+        padding: 0 0 20px;
+    }
+    .main__about-me__description h1{
+        font-size: 18px;
+        padding: 0;
+    }
+    .main__about-me__description h2{
+        font-size: 14px;
+    }
+    .main__about-me__description p{
+        font-size: 12px;
+    }
 }

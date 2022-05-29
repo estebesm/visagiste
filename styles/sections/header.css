@@ -2,7 +2,9 @@ header{
     display: flex;
     flex-direction: column;
 }
-
+.header__burger, .header__nav__logo, .header__close-button{
+    display: none;
+}
 .header__logo{
     font-family: 'Ms Madi', cursive;
     font-size: 100px;
@@ -28,8 +30,69 @@ header nav{
     padding: 20px 30px;
     cursor: pointer;
     letter-spacing: 1.1px;
+    font-size: 24px;
 }
 
 .header__nav-item:hover{
     color: rgba(231,198,189,1);
+}
+
+@media (max-width: 767px) {
+    header{
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .15);
+    }
+    .header__burger{
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    .header__logo{
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    header nav{
+        display: none;
+    }
+    .header__icon{
+        top: 15px;
+        right: 15px;
+    }
+    .header__icon svg{
+        width: 20px;
+        height: 20px;
+    }
+    header nav.active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        background-color: white;
+        z-index: 10;
+    }
+    header nav.active .header__nav__logo{
+        display: block;
+        font-family: 'Ms Madi', cursive;
+        font-size: 36px;
+        border-bottom: 2px solid rgba(231,198,189,1);
+        margin-bottom: 10px;
+    }
+    header nav.active .header__close-button{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: inherit;
+        border: none;
+    }
+    .header__nav-item{
+        font-size: 14px;
+    }
 }

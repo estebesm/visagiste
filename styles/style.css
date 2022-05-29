@@ -1,11 +1,12 @@
 body *{
     box-sizing: border-box;
     font-size: 18px;
-    font-family: 'Roboto Flex', sans-serif;
+    font-family: 'Forum', cursive;
     color: rgba(112,112,112,1);
 }
 body{
     margin: 0;
+    overflow-x: hidden;
 }
 h1, h2, h3, p{
     margin: 0;
@@ -13,4 +14,47 @@ h1, h2, h3, p{
 .container{
     max-width: 1140px;
     margin: 0 auto;
+}
+.call-button{
+    display: block;
+    color: white;
+    background-color: rgba(231,198,189,1);
+    width: 180px;
+    padding: 10px 0;
+    font-size: 26px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+.call-button:hover{
+    background-color: #bda2a2;
+}
+main{
+    display: none;
+}
+main.opened{
+    display: block;
+}
+
+@media (max-width: 1200px){
+    .container{
+        width: 720px;
+    }
+    .call-button{
+        width: 120px;
+        padding: 5px 0;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .call-button{
+        display: block;
+        margin: 10px auto 0;
+    }
 }

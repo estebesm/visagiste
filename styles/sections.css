@@ -2,4 +2,10 @@
 @import url(sections/main/about.css);
 @import url(sections/main/services.css);
 @import url(sections/main/about-me.css);
+@import url(sections/main/salon.css);
 @import url(sections/main/contacts.css);
+@import url(sections/footer.css);
+
+@import url(sections/services/services.css);
+
+@import url(animation.css);

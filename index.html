@@ -10,15 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/style.css" type="text/css">
     <link rel="stylesheet" href="styles/sections.css" type="text/css">
 
     <script src="js/app.js" type="module"></script>
+
     <title>HeirCater</title>
 </head>
 <body>
     <header>
+        <svg class="header__burger" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.75 0.5H17.25V2H0.75V0.5ZM0.75 7.25H17.25V8.75H0.75V7.25ZM0.75 14H17.25V15.5H0.75V14Z" fill="#707070FF"/>
+        </svg>
         <span class="header__logo">
             HeirCater
         </span>
@@ -28,28 +33,33 @@
         </svg>
         </div>
         <nav>
-<!--            <span class="header__nav-item">-->
-<!--                Главная-->
-<!--            </span>-->
-            <span class="header__nav-item">
-                Обо мне
+            <button type="button" class="header__close-button">
+                <svg width="15" height="15" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.67391 9.00001L0.836914 15.837L2.16291 17.163L8.99991 10.326L15.8369 17.163L17.1629 15.837L10.3259 9.00001L17.1629 2.16301L15.8369 0.837006L8.99991 7.67401L2.16291 0.837006L0.836914 2.16301L7.67391 9.00001Z" fill="#707070FF"/>
+                </svg>
+            </button>
+            <span class="header__nav__logo">
+                HeirCater
             </span>
-            <span class="header__nav-item">
+            <span class="header__nav-item" id="header__main-button">
+                Главная
+            </span>
+            <span class="header__nav-item" id="header__services-button">
                 Услуги
             </span>
-            <span class="header__nav-item">
+            <span class="header__nav-item" id="header__salon-button">
+                Салон
+            </span>
+            <span class="header__nav-item" id="header__about-me-button">
+                Обо мне
+            </span>
+            <span class="header__nav-item" id="header__contacts-button">
                 Контакты
             </span>
-            <span class="header__nav-item">
-                Планы и цены
-            </span>
-<!--            <span class="header__nav-item">-->
-<!--                Блог-->
-<!--            </span>-->
         </nav>
     </header>
-    <main>
-        <section class="main__about">
+    <main class="opened" id="main__main">
+        <section class="main__about" id="main__about">
             <div class="container">
                 <div class="main__about__description">
                     <h1>HeirCater</h1>
@@ -66,7 +76,7 @@
                 <img class="main__about__image" src="images/main/main-2.jpg" alt="me"/>
             </div>
         </section>
-        <section class="main__services">
+        <section class="main__services" id="main__services">
             <h1>Наши услуги</h1>
             <div class="container">
                 <div class="main__services-item">
@@ -113,7 +123,37 @@
                 </div>
             </div>
         </section>
-        <section class="main__about-me">
+        <section class="main__salon" id="main__salon">
+            <div class="container">
+                <div class="main__salon__description">
+                    <h1>
+                        Салон
+                    </h1>
+                    <p>
+                        Наш салон красоты — лучший в Нью-Йорке, и мы всегда готовы помочь вам выглядеть на все сто
+                        в особых случаях. Каждая прическа и макияж, которые мы создаем, индивидуальны для вас.
+                    </p>
+                </div>
+                <div class="main__salon__media">
+                    <img src="images/main/salon/salon-1.jpg" alt="1">
+<!--                    <img src="images/main/salon/salon-2.jpg" class="lower" alt="1">-->
+                </div>
+                <div class="main__salon__description">
+                    <p>
+                        Наши мастера могут выполнить множество стилей макияжа: естественный макияж, вечерний,
+                        редакционный и омолаживающий. Наши мастера могут выполнить множество стилей макияжа:
+                        естественный макияж, вечерний, редакционный и омолаживающий. Мы также предлагаем услуги
+                        свадебного макияжа и прически для свадеб любого размера.
+                        Каждая участница вашей свадебной вечеринки может иметь уникальный макияж и прическу.
+                    </p>
+                </div>
+                <div class="main__salon__media">
+                    <img src="images/main/salon/salon-3.jpg" alt="1">
+                    <img src="images/main/salon/salon-4.jpg" alt="1">
+                </div>
+            </div>
+        </section>
+        <section class="main__about-me" id="main__about-me">
             <div class="container">
                 <div class="main__about-me__description">
                     <h1>
@@ -141,27 +181,122 @@
                 </div>
             </div>
         </section>
-        <section class="main__contacts">
-            <div class="container">
-                <div class="main__contacts__media">
-                    <img src="images/main/services-1.webp" alt="contacts">
-                </div>
-                <div class="main__contacts__description">
+    </main>
+    <div class="services">
+        <div class="container">
+            <div class="services__item" id="services__item-0">
+                <img src="images/main/services-1.webp" alt="1"/>
+                <div class="services__item__description">
                     <h3>
-                        Контактная информация
+                        Подиумный макияж
                     </h3>
-                    <p class="my-address">
-
+                    <p>
+                        1 час
                     </p>
-                    <p class="my-tel-number">
-                        kulbarakovich@gmail.com
+                    <p>
+                        3000 сомов
                     </p>
-                    <p class="my-email">
-                        +996 505 117 733
+                    <h4>
+                        Описание услуги
+                    </h4>
+                    <p>
+                        Подиумный макияж — это услуга, которой вы можете побаловать себя или подругу.
+                        Будь то для особого случая или просто потому, что хочется перемен, —
+                        в любом случае, я обеспечу именно тот результат, которого вы ждете.
+                        Свяжитесь со мной, чтобы забронировать время. Вы не пожалеете.
                     </p>
+                    <a class="call-button">
+                        Позвонить
+                    </a>
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="services__item" id="services__item-1">
+                <img src="images/main/services-2.webp" alt="1"/>
+                <div class="services__item__description">
+                    <h3>
+                        Подиумный макияж
+                    </h3>
+                    <p>
+                        1 час
+                    </p>
+                    <p>
+                        3000 сомов
+                    </p>
+                    <h4>
+                        Описание услуги
+                    </h4>
+                    <p>
+                        Подиумный макияж — это услуга, которой вы можете побаловать себя или подругу.
+                        Будь то для особого случая или просто потому, что хочется перемен, —
+                        в любом случае, я обеспечу именно тот результат, которого вы ждете.
+                        Свяжитесь со мной, чтобы забронировать время. Вы не пожалеете.
+                    </p>
+                    <a class="call-button">
+                        Позвонить
+                    </a>
+                </div>
+            </div>
+            <div class="services__item" id="services__item-2">
+                <img src="images/main/services-3.webp" alt="1"/>
+                <div class="services__item__description">
+                    <h3>
+                        Подиумный макияж
+                    </h3>
+                    <p>
+                        1 час
+                    </p>
+                    <p>
+                        3000 сомов
+                    </p>
+                    <h4>
+                        Описание услуги
+                    </h4>
+                    <p>
+                        Подиумный макияж — это услуга, которой вы можете побаловать себя или подругу.
+                        Будь то для особого случая или просто потому, что хочется перемен, —
+                        в любом случае, я обеспечу именно тот результат, которого вы ждете.
+                        Свяжитесь со мной, чтобы забронировать время. Вы не пожалеете.
+                    </p>
+                    <a class="call-button">
+                        Позвонить
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="main__contacts" id="main__contacts">
+        <div class="container">
+            <div class="main__contacts__media">
+                <img src="images/main/services-1.webp" alt="contacts">
+            </div>
+            <div class="main__contacts__description">
+                <h3>
+                    Контактная информация
+                </h3>
+                <p class="my-address">
+
+                </p>
+                <p class="my-tel-number">
+                    kulbarakovich@gmail.com
+                </p>
+                <p class="my-email">
+                    +996 505 117 733
+                </p>
+                <p class="my-instagram">
+                    instagram.com/kulbarakovich
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <h3>
+                HeirCater
+            </h3>
+            <p>
+                г. Бишкек 2022
+            </p>
+        </div>
+    </footer>
 </body>
 </html>

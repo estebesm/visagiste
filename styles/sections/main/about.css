@@ -23,3 +23,44 @@
     font-family: 'Ms Madi', cursive;
     margin: 0 0 20px;
 }
+
+@media (max-width: 767px) {
+    .main__about .container{
+        padding: 14px;
+    }
+    .main__about__description{
+        width: 60%;
+        padding: 0 20px;
+    }
+    .main__about__description h1{
+        font-size: 36px;
+        margin: 0 0 10px;
+        text-align: center;
+    }
+    .main__about__description p{
+        font-size: 18px;
+    }
+    .main__about__image{
+        width: 40%;
+    }
+}
+@media (max-width: 476px) {
+    .main__about .container{
+        padding: 10px
+    }
+    .main__about__description{
+        width: 60%;
+        padding: 0 10px 0 0;
+    }
+    .main__about__description h1{
+        font-size: 24px;
+        margin: 0;
+        text-align: start;
+    }
+    .main__about__description p{
+        font-size: 12px;
+    }
+    .main__about__image{
+        width: 40%;
+    }
+}

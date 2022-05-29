@@ -1,0 +1,20 @@
+footer{
+    background-color: #000;
+}
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+footer h3{
+    color: white;
+    font-size: 32px;
+    line-height: 48px;
+    font-family: 'Ms Madi', cursive;
+    padding-bottom: 10px;
+}
+footer p{
+    color: white;
+    font-size: 14px;
+}

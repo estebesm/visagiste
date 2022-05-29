@@ -1,0 +1,23 @@
+.services.opened, main.opened{
+    animation: 1s appearance;
+}
+@keyframes appearance {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+header nav.active{
+    animation: .3s open-header-menu;
+}
+@keyframes open-header-menu {
+    0%{
+        transform: translateX(-100vw);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
