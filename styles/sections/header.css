@@ -39,6 +39,8 @@ header nav{
 
 @media (max-width: 767px) {
     header{
+        padding: 10px 0;
+        display: flex;
         background-color: white;
         position: sticky;
         top: 0;
@@ -48,18 +50,19 @@ header nav{
     .header__burger{
         display: block;
         position: absolute;
-        top: 15px;
+        top: 25px;
         left: 15px;
     }
     .header__logo{
         font-size: 36px;
         margin-bottom: 10px;
+        cursor: default;
     }
     header nav{
         display: none;
     }
     .header__icon{
-        top: 15px;
+        top: 25px;
         right: 15px;
     }
     .header__icon svg{
@@ -93,6 +96,6 @@ header nav{
         border: none;
     }
     .header__nav-item{
-        font-size: 14px;
+        font-size: 24px;
     }
 }

@@ -49,6 +49,7 @@
         padding:  20px 0 0;
     }
     .main__about-me__description{
+        width: 100%;
         padding: 0 10px;
     }
     .main__about-me__description h1{

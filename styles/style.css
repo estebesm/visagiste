@@ -6,10 +6,13 @@ body *{
 }
 body{
     margin: 0;
-    overflow-x: hidden;
+    //overflow-x: hidden;
 }
 h1, h2, h3, p{
     margin: 0;
+}
+a{
+    text-decoration: none;
 }
 .container{
     max-width: 1140px;
@@ -42,9 +45,9 @@ main.opened{
         width: 720px;
     }
     .call-button{
-        width: 120px;
+        width: 180px;
         padding: 5px 0;
-        font-size: 18px;
+        font-size: 28px;
     }
 }
 

@@ -42,6 +42,9 @@
         line-height: 20px;
         letter-spacing: 1px;
     }
+    .main__salon__media img{
+        width: 100%;
+    }
     .main__salon__media{
         padding: 10px 0;
     }
