@@ -35,7 +35,8 @@ export const works = () => {
         else
             openImage(imageWrapper)
     }))
-    images.forEach(image => image.addEventListener('click', (e) => {
-        e.preventDefault()
+    images.forEach(image => image.addEventListener('click', e => {
+        if(image.parentElement.classList.contains('active'))
+        e.stopPropagation()
     }))
 }
