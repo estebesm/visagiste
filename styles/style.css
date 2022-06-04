@@ -1,6 +1,6 @@
 body *{
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 24px;
     font-family: 'Forum', cursive;
     color: rgba(112,112,112,1);
 }
@@ -13,6 +13,9 @@ h1, h2, h3, p{
 }
 a{
     text-decoration: none;
+}
+p{
+    font-size: 24px;
 }
 .container{
     max-width: 1140px;

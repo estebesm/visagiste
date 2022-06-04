@@ -37,7 +37,7 @@ header nav{
     color: rgba(231,198,189,1);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
     header{
         padding: 10px 0;
         display: flex;
