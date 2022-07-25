@@ -1,5 +1,6 @@
 .works{
     display: none;
+    padding: 30px 0;
 }
 .works.opened{
     display: block;

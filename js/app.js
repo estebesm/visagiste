@@ -2,6 +2,7 @@ import {openServices} from "./services.js";
 import {openMain} from "./main.js";
 import {closeHeaderMenu, isHeaderMenuOpened, openHeaderMenu} from "./header.js";
 import {works} from "./works.js";
+import {closeFeedback, openFeedback} from "./feedback.js";
 
 const services = document.querySelectorAll('.main__services-item')
 const main = document.getElementById('header__main-button')
@@ -23,9 +24,10 @@ function switchPage(btn){
     if(isHeaderMenuOpened()){
         closeHeaderMenu()
     }
-    if(!document.getElementById('main__main').classList.contains('opened')){
-        openMain()
-    }
+    // if(!document.getElementById('main__main').classList.contains('opened')){
+    //     openMain()
+    //     openFeedback()
+    // }
     if(btn) scrollTo(document.getElementById(`main__${btn.id.split('__')[1].slice(0, -7)}`))
     else scrollTo(document.getElementById(`top`))
 }
@@ -42,6 +44,8 @@ const app = () => {
     })
     headerBurger.addEventListener('click', openHeaderMenu)
     headerCloseBtn.addEventListener('click', closeHeaderMenu)
+    // document.querySelector('.header__nav-item:last-child').addEventListener('click', openFeedback)
+    // document.querySelector('.header__nav-item').addEventListener('click', closeFeedback)
     works()
 }
 

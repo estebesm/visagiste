@@ -17,7 +17,7 @@
 
     <script src="js/app.js" type="module"></script>
 
-    <title>HeirCater</title>
+    <title>Aimakeup</title>
 </head>
 <body>
     <header>
@@ -25,7 +25,7 @@
             <path d="M0.75 0.5H17.25V2H0.75V0.5ZM0.75 7.25H17.25V8.75H0.75V7.25ZM0.75 14H17.25V15.5H0.75V14Z" fill="#707070FF"/>
         </svg>
         <a href="#top" class="header__logo">
-            HeirCater
+            <img src="images/main/logo.jpg" alt="Aimakeup">
         </a>
         <div class="header__icon">
             <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,25 +39,25 @@
                 </svg>
             </button>
             <a href="#top" class="header__nav__logo">
-                HeirCater
+                Aimakeup
             </a>
             <span class="header__nav-item" id="header__main-button">
-                Главная
+                Home
             </span>
             <span class="header__nav-item" id="header__services-button">
-                Услуги
-            </span>
-            <span class="header__nav-item" id="header__salon-button">
-                Салон
-            </span>
-            <span class="header__nav-item" id="header__about-me-button">
-                Обо мне
+                Services
             </span>
             <span class="header__nav-item" id="header__works-button">
-                Наши работы
+                Portfolio
             </span>
-            <span class="header__nav-item" id="header__contacts-button">
-                Контакты
+<!--            <span class="header__nav-item" id="header__salon-button">-->
+<!--                Салон-->
+<!--            </span>-->
+            <span class="header__nav-item" id="header__about-me-button">
+                About
+            </span>
+            <span class="header__nav-item" id="header__feedback-button">
+                Contacts
             </span>
         </nav>
     </header>
@@ -65,10 +65,10 @@
         <section class="main__about" id="main__about">
             <div class="container">
                 <div class="main__about__description">
-                    <h1>HeirCater</h1>
+                    <h1>AiMakeup</h1>
                     <h2>Надежный специалист</h2>
                     <p>
-                        HeirCater к вашим услугам. Высокое качество сервиса, которое я предлагаю своим клиентам, —
+                        Aimakeup к вашим услугам. Высокое качество сервиса, которое я предлагаю своим клиентам, —
                         результат долгих лет усердной работы. Любовь к красоте и присущий мне перфекционизм обусловили
                         мое увлечение индустрией красоты, которое переросло в призвание и профессию.
                         Я горжусь тем, что могу предложить клиентам все самое лучшее из мира красоты,
@@ -76,7 +76,7 @@
                         и запишитесь на консультацию. Если вам нужно знать больше, свяжитесь со мной.
                     </p>
                 </div>
-                <img class="main__about__image" src="images/main/main-2.jpg" alt="me"/>
+                <img class="main__about__image" src="images/main/works/photo-5.jpg" alt="me"/>
             </div>
         </section>
         <section class="main__services" id="main__services">
@@ -126,33 +126,85 @@
                 </div>
             </div>
         </section>
-        <section class="main__salon" id="main__salon">
+<!--        <section class="main__salon" id="main__salon">-->
+<!--            <div class="container">-->
+<!--                <div class="main__salon__description">-->
+<!--                    <h1>-->
+<!--                        Салон-->
+<!--                    </h1>-->
+<!--                    <p>-->
+<!--                        Наш салон красоты — лучший в Нью-Йорке, и мы всегда готовы помочь вам выглядеть на все сто-->
+<!--                        в особых случаях. Каждая прическа и макияж, которые мы создаем, индивидуальны для вас.-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--                <div class="main__salon__media">-->
+<!--                    <img src="images/main/salon/salon-1.jpg" alt="1">-->
+<!--&lt;!&ndash;                    <img src="images/main/salon/salon-2.jpg" class="lower" alt="1">&ndash;&gt;-->
+<!--                </div>-->
+<!--                <div class="main__salon__description">-->
+<!--                    <p>-->
+<!--                        Наши мастера могут выполнить множество стилей макияжа: естественный макияж, вечерний,-->
+<!--                        редакционный и омолаживающий. Наши мастера могут выполнить множество стилей макияжа:-->
+<!--                        естественный макияж, вечерний, редакционный и омолаживающий. Мы также предлагаем услуги-->
+<!--                        свадебного макияжа и прически для свадеб любого размера.-->
+<!--                        Каждая участница вашей свадебной вечеринки может иметь уникальный макияж и прическу.-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--                <div class="main__salon__media">-->
+<!--                    <img src="images/main/salon/salon-3.jpg" alt="1">-->
+<!--                    <img src="images/main/salon/salon-4.jpg" alt="1">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+        <section class="works opened" id="main__works">
             <div class="container">
-                <div class="main__salon__description">
-                    <h1>
-                        Салон
-                    </h1>
-                    <p>
-                        Наш салон красоты — лучший в Нью-Йорке, и мы всегда готовы помочь вам выглядеть на все сто
-                        в особых случаях. Каждая прическа и макияж, которые мы создаем, индивидуальны для вас.
-                    </p>
+                <h1>
+                    Наши работы
+                </h1>
+                <div class="works__image-wrapper">
+                    <img src="images/main/works/photo-1.jpg" alt="work">
                 </div>
-                <div class="main__salon__media">
-                    <img src="images/main/salon/salon-1.jpg" alt="1">
-<!--                    <img src="images/main/salon/salon-2.jpg" class="lower" alt="1">-->
+                <div class="works__image-wrapper">
+                    <img src="images/main/works/photo-2.jpg" alt="work">
                 </div>
-                <div class="main__salon__description">
-                    <p>
-                        Наши мастера могут выполнить множество стилей макияжа: естественный макияж, вечерний,
-                        редакционный и омолаживающий. Наши мастера могут выполнить множество стилей макияжа:
-                        естественный макияж, вечерний, редакционный и омолаживающий. Мы также предлагаем услуги
-                        свадебного макияжа и прически для свадеб любого размера.
-                        Каждая участница вашей свадебной вечеринки может иметь уникальный макияж и прическу.
-                    </p>
+                <div class="works__image-wrapper">
+                    <img src="images/main/works/photo-3.jpg" alt="work">
                 </div>
-                <div class="main__salon__media">
-                    <img src="images/main/salon/salon-3.jpg" alt="1">
-                    <img src="images/main/salon/salon-4.jpg" alt="1">
+                <div class="works__image-wrapper">
+                    <img src="images/main/works/photo-4.jpg" alt="work">
+                </div>
+                <div class="works__image-wrapper">
+                    <img src="images/main/works/photo-5.jpg" alt="work">
+                </div>
+                <div class="works__image-wrapper">
+                    <img src="images/main/works/photo-6.jpg" alt="work">
+                </div>
+                <div class="works__image-wrapper">
+                    <img src="images/main/works/photo-7.jpg" alt="work">
+                </div>
+                <div class="works__image-wrapper">
+                    <img src="images/main/works/photo-8.jpg" alt="work">
+                </div>
+                <div class="works__image-wrapper">
+                    <img src="images/main/works/photo-9.jpg" alt="work">
+                </div>
+                <div class="works__image-wrapper">
+                    <img src="images/main/works/photo-10.jpg" alt="work">
+                </div>
+                <div class="works__image-wrapper">
+                    <img src="images/main/works/photo-11.jpg" alt="work">
+                </div>
+                <div class="works__image-wrapper">
+                    <img src="images/main/works/photo-12.jpg" alt="work">
+                </div>
+                <div class="works__image-wrapper">
+                    <img src="images/main/works/photo-13.jpg" alt="work">
+                </div>
+                <div class="works__image-wrapper">
+                    <img src="images/main/works/photo-14.jpg" alt="work">
+                </div>
+                <div class="works__image-wrapper">
+                    <img src="images/main/works/photo-15.jpg" alt="work">
                 </div>
             </div>
         </section>
@@ -267,86 +319,78 @@
             </div>
         </div>
     </div>
-    <div class="works">
+    <div class="feedback opened" id=main__feedback>
         <div class="container">
-            <h1>
-                Наши работы
-            </h1>
-            <div class="works__image-wrapper">
-                <img src="images/main/works/photo-1.jpg" alt="work">
+            <img src="images/main/works/photo-10.jpg" alt="me">
+            <div class="feedback__content">
+                <h1>
+                    INQUIRE
+                </h1>
+                <h2>
+                    I'd love to chat! Please submit the contact form below and I'll be in touch soon.
+                </h2>
+                <form>
+                    <input type="text" id="feedback__name" placeholder="Имя">
+                    <label for="feedback__name"></label>
+
+                    <input type="text" id="feedback__email" placeholder="e-mail">
+                    <label for="feedback__email"></label>
+
+                    <input type="text" id="feedback__location" placeholder="Адрес">
+                    <label for="feedback__location"></label>
+
+                    <textarea id="feedback__message" placeholder="Ваше сообщение"></textarea>
+                    <label for="feedback__message"></label>
+                    <input type="submit">
+                </form>
             </div>
-            <div class="works__image-wrapper">
-                <img src="images/main/works/photo-2.jpg" alt="work">
-            </div>
-            <div class="works__image-wrapper">
-                <img src="images/main/works/photo-3.jpg" alt="work">
-            </div>
-            <div class="works__image-wrapper">
-                <img src="images/main/works/photo-4.jpg" alt="work">
-            </div>
-            <div class="works__image-wrapper">
-                <img src="images/main/works/photo-5.jpg" alt="work">
-            </div>
-            <div class="works__image-wrapper">
-                <img src="images/main/works/photo-6.jpg" alt="work">
-            </div>
-            <div class="works__image-wrapper">
-                <img src="images/main/works/photo-7.jpg" alt="work">
-            </div>
-            <div class="works__image-wrapper">
-                <img src="images/main/works/photo-8.jpg" alt="work">
-            </div>
-            <div class="works__image-wrapper">
-                <img src="images/main/works/photo-9.jpg" alt="work">
-            </div>
-            <div class="works__image-wrapper">
-                <img src="images/main/works/photo-10.jpg" alt="work">
-            </div>
-            <div class="works__image-wrapper">
-                <img src="images/main/works/photo-11.jpg" alt="work">
-            </div>
-            <div class="works__image-wrapper">
-                <img src="images/main/works/photo-12.jpg" alt="work">
-            </div>
-            <div class="works__image-wrapper">
-                <img src="images/main/works/photo-13.jpg" alt="work">
-            </div>
-            <div class="works__image-wrapper">
-                <img src="images/main/works/photo-14.jpg" alt="work">
-            </div>
-            <div class="works__image-wrapper">
-                <img src="images/main/works/photo-15.jpg" alt="work">
-            </div>
+        </div>
+        <div class="main__contacts__description">
+            <h3>
+                Контактная информация
+            </h3>
+            <p class="my-address">
+
+            </p>
+            <p class="my-tel-number">
+                kulbarakovich@gmail.com
+            </p>
+            <p class="my-email">
+                +996 505 117 733
+            </p>
+            <p class="my-instagram">
+                instagram.com/kulbarakovich
+            </p>
         </div>
     </div>
-    <section class="main__contacts" id="main__contacts">
-        <div class="container">
-            <div class="main__contacts__media">
-                <img src="images/main/services-1.webp" alt="contacts">
-            </div>
-            <div class="main__contacts__description">
-                <h3>
-                    Контактная информация
-                </h3>
-                <p class="my-address">
+<!--    <section class="main__contacts" id="main__contacts">-->
+<!--        <div class="container">-->
+<!--            <div class="main__contacts__media">-->
+<!--                <img src="images/main/services-1.webp" alt="contacts">-->
+<!--            </div>-->
+<!--            <div class="main__contacts__description">-->
+<!--                <h3>-->
+<!--                    Контактная информация-->
+<!--                </h3>-->
+<!--                <p class="my-address">-->
 
-                </p>
-                <p class="my-tel-number">
-                    kulbarakovich@gmail.com
-                </p>
-                <p class="my-email">
-                    +996 505 117 733
-                </p>
-                <p class="my-instagram">
-                    instagram.com/kulbarakovich
-                </p>
-            </div>
-        </div>
-    </section>
+<!--                </p>-->
+<!--                <p class="my-tel-number">-->
+<!--                    kulbarakovich@gmail.com-->
+<!--                </p>-->
+<!--                <p class="my-email">-->
+<!--                    +996 505 117 733-->
+<!--                </p>-->
+<!--                <p class="my-instagram">-->
+<!--                    instagram.com/kulbarakovich-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
     <footer>
         <div class="container">
             <h3>
-                HeirCater
+                Aimakeup
             </h3>
             <p>
                 г. Бишкек 2022

@@ -1,0 +1,107 @@
+.feedback{
+    display: none;
+    padding: 80px 0;
+}
+.feedback.opened{
+    display: block;
+}
+.feedback .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 0 80px;
+}
+.feedback h1{
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(231,198,189,1);
+    margin-bottom: 20px;
+}
+.feedback h2{
+    margin-bottom: 80px;
+    font-size: 24px;
+    font-weight: 300;
+}
+.feedback img{
+    width: 40%;
+    margin-right: 100px;
+    object-fit: contain;
+}
+.feedback__content{
+
+}
+.feedback input{
+    display: block;
+    width: 100%;
+    //max-width: 400px;
+    padding: 10px 20px;
+    outline: 0;
+    border: 1px solid rgba(231,198,189,1);
+    border-radius: 8px;
+    margin: 10px 0;
+}
+.feedback input:focus, .feedback textarea:focus{
+    outline: 2px solid rosybrown;
+}
+.feedback textarea{
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    padding: 10px 20px;
+    border: 1px solid rgba(231,198,189,1);
+    border-radius: 8px;
+}
+.feedback input[type=submit]{
+    display: block;
+    margin: 20px auto 0;
+    padding: 20px 0;
+    width: 100%;
+    //max-width: 400px;
+    background-color: rosybrown;
+    color: white;
+}
+
+.feedback .main__contacts__description{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1200px){
+    .feedback img{
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .feedback{
+        padding: 40px 0;
+    }
+    .feedback .container{
+        justify-content: center;
+        padding: 0 20px 40px;
+    }
+    .feedback img{
+        display: none;
+    }
+    .feedback__content h1{
+        width: 300px;
+        text-align: center;
+        margin: 0 auto 20px;
+    }
+    .feedback__content h2{
+        width: 100%;
+        margin: 0 auto 40px;
+        text-align: center;
+    }
+    .feedback__content input{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+

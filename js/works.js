@@ -17,17 +17,17 @@ const closeImage = (wrapper) => {
 }
 
 export const closeWorks = () => {
-    worksSection.classList.remove('opened')
-    contactsSection.style.display = 'block'
-    mainSection.classList.add('opened')
+    // worksSection.classList.remove('opened')
+    // contactsSection.style.display = 'block'
+    // mainSection.classList.add('opened')
 }
 
 export const works = () => {
-    openButton.addEventListener('click', () => {
-        mainSection.classList.remove('opened')
-        contactsSection.style.display = 'none'
-        if(!worksSection.classList.contains('opened')) worksSection.classList.add('opened')
-    })
+    // openButton.addEventListener('click', () => {
+    //     mainSection.classList.remove('opened')
+    //     contactsSection.style.display = 'none'
+    //     if(!worksSection.classList.contains('opened')) worksSection.classList.add('opened')
+    // })
 
     imageWrappers.forEach(imageWrapper => imageWrapper.addEventListener('click', () => {
         if(imageWrapper.classList.contains('active'))

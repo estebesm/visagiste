@@ -6,12 +6,18 @@ header{
     display: none;
 }
 .header__logo{
-    font-family: 'Ms Madi', cursive;
-    font-size: 100px;
-    line-height: 1.2;
+    //font-family: 'Ms Madi', cursive;
+    //font-size: 100px;
+    //line-height: 1.2;
     display: block;
     margin: 0 auto;
-    border-bottom: 2px solid rgba(231,198,189,1);
+    padding: 10px;
+    //border-bottom: 2px solid rgba(231,198,189,1);
+}
+
+.header__logo img{
+    width: 300px;
+    object-fit: contain;
 }
 
 .header__icon{
@@ -55,8 +61,16 @@ header nav{
     }
     .header__logo{
         font-size: 36px;
-        margin-bottom: 10px;
+        //margin-bottom: 10px;
         cursor: default;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    .header__logo img{
+        width: auto;
+        height: 50px;
+        display: block;
     }
     header nav{
         display: none;

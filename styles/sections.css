@@ -9,4 +9,6 @@
 @import url(sections/services/services.css);
 @import url(works.css);
 
+@import url(sections/feedback/feedback.css);
+
 @import url(animation.css);
