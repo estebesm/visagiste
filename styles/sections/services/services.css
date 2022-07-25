@@ -1,6 +1,7 @@
 .services{
     display: none;
     //background-color: rgba(231,198,189,.15);
+    min-height: calc(100vh - 334px);
 }
 .services.opened{
     display: block;
@@ -61,6 +62,12 @@
     }
     .services .call-button{
         margin-top: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .services{
+        min-height: calc(100vh - 184px);
     }
 }
 @media (max-width: 476px) {
