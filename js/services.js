@@ -1,4 +1,4 @@
-import {closeMain} from "./main.js";
+import {closeMain, openMain} from "./main.js";
 
 const services = document.querySelector('.services')
 
@@ -10,6 +10,6 @@ export const openServices = (index) => {
 }
 
 export const closeServices = () => {
-    // document.querySelectorAll('.services__item').forEach(item => item.style.display = 'none')
-    // services.classList.remove('opened')
+    document.querySelectorAll('.services__item').forEach(item => item.style.display = 'none')
+    services.classList.remove('opened')
 }

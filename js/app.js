@@ -28,6 +28,7 @@ function switchPage(btn){
     //     openMain()
     //     openFeedback()
     // }
+    openMain()
     if(btn) scrollTo(document.getElementById(`main__${btn.id.split('__')[1].slice(0, -7)}`))
     else scrollTo(document.getElementById(`top`))
 }
