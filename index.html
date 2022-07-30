@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap"
+          rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/style.css" type="text/css">
@@ -20,349 +21,372 @@
     <title>Aimakeup</title>
 </head>
 <body>
-    <header>
-        <svg class="header__burger" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.75 0.5H17.25V2H0.75V0.5ZM0.75 7.25H17.25V8.75H0.75V7.25ZM0.75 14H17.25V15.5H0.75V14Z" fill="#707070FF"/>
-        </svg>
-        <a href="#top" class="header__logo">
-            <img src="images/main/logo.jpg" alt="Aimakeup">
-        </a>
-        <div class="header__icon">
+<header>
+    <svg class="header__burger" width="18" height="16" viewBox="0 0 18 16" fill="none"
+         xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.75 0.5H17.25V2H0.75V0.5ZM0.75 7.25H17.25V8.75H0.75V7.25ZM0.75 14H17.25V15.5H0.75V14Z"
+              fill="#707070FF"/>
+    </svg>
+    <a href="#top" class="header__logo">
+        <img src="images/main/logo.jpg" alt="Aimakeup">
+    </a>
+    <div class="header__icon">
+        <a href="https://www.instagram.com/aiymamuanyc/">
             <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 5.76825C8.5638 5.76825 5.76825 8.5638 5.76825 12C5.76825 15.4362 8.5638 18.2293 12 18.2293C15.4362 18.2293 18.2293 15.4338 18.2293 12C18.2317 8.5638 15.4362 5.76825 12 5.76825ZM12 15.8536C9.87422 15.8536 8.14641 14.1258 8.14641 12C8.14641 9.87422 9.87422 8.14641 12 8.14641C14.1258 8.14641 15.8536 9.87422 15.8536 12C15.8536 14.1258 14.1258 15.8536 12 15.8536ZM17.0936 0H6.90637C3.09889 0 0 3.09889 0 6.90637V17.0936C0 20.9011 3.09889 24 6.90637 24H17.0936C20.9011 24 24 20.9011 24 17.0936V6.90637C24 3.09889 20.9035 0 17.0936 0ZM21.6243 17.0936C21.6243 19.5907 19.5907 21.6218 17.0936 21.6218H6.90637C4.4093 21.6218 2.37816 19.5907 2.37816 17.0936V6.90637C2.37816 4.4093 4.4093 2.37816 6.90637 2.37816H17.0936C19.5907 2.37816 21.6218 4.4093 21.6218 6.90637V17.0936H21.6243ZM18.3167 3.96764C17.4188 3.96764 16.6859 4.69808 16.6859 5.59838C16.6859 6.49626 17.4164 7.22912 18.3167 7.22912C19.2146 7.22912 19.9474 6.49869 19.9474 5.59838C19.9474 4.69808 19.2146 3.96764 18.3167 3.96764Z" fill="#e7c6bd"/>
-        </svg>
-        </div>
-        <nav>
-            <button type="button" class="header__close-button">
-                <svg width="15" height="15" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.67391 9.00001L0.836914 15.837L2.16291 17.163L8.99991 10.326L15.8369 17.163L17.1629 15.837L10.3259 9.00001L17.1629 2.16301L15.8369 0.837006L8.99991 7.67401L2.16291 0.837006L0.836914 2.16301L7.67391 9.00001Z" fill="#707070FF"/>
-                </svg>
-            </button>
-            <a href="#top" class="header__nav__logo">
-                Aimakeup
-            </a>
-            <span class="header__nav-item" id="header__main-button">
+                <path d="M12 5.76825C8.5638 5.76825 5.76825 8.5638 5.76825 12C5.76825 15.4362 8.5638 18.2293 12 18.2293C15.4362 18.2293 18.2293 15.4338 18.2293 12C18.2317 8.5638 15.4362 5.76825 12 5.76825ZM12 15.8536C9.87422 15.8536 8.14641 14.1258 8.14641 12C8.14641 9.87422 9.87422 8.14641 12 8.14641C14.1258 8.14641 15.8536 9.87422 15.8536 12C15.8536 14.1258 14.1258 15.8536 12 15.8536ZM17.0936 0H6.90637C3.09889 0 0 3.09889 0 6.90637V17.0936C0 20.9011 3.09889 24 6.90637 24H17.0936C20.9011 24 24 20.9011 24 17.0936V6.90637C24 3.09889 20.9035 0 17.0936 0ZM21.6243 17.0936C21.6243 19.5907 19.5907 21.6218 17.0936 21.6218H6.90637C4.4093 21.6218 2.37816 19.5907 2.37816 17.0936V6.90637C2.37816 4.4093 4.4093 2.37816 6.90637 2.37816H17.0936C19.5907 2.37816 21.6218 4.4093 21.6218 6.90637V17.0936H21.6243ZM18.3167 3.96764C17.4188 3.96764 16.6859 4.69808 16.6859 5.59838C16.6859 6.49626 17.4164 7.22912 18.3167 7.22912C19.2146 7.22912 19.9474 6.49869 19.9474 5.59838C19.9474 4.69808 19.2146 3.96764 18.3167 3.96764Z"
+                      fill="#e7c6bd"/>
+            </svg>
+        </a>
+    </div>
+    <nav>
+        <button type="button" class="header__close-button">
+            <svg width="15" height="15" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M7.67391 9.00001L0.836914 15.837L2.16291 17.163L8.99991 10.326L15.8369 17.163L17.1629 15.837L10.3259 9.00001L17.1629 2.16301L15.8369 0.837006L8.99991 7.67401L2.16291 0.837006L0.836914 2.16301L7.67391 9.00001Z"
+                      fill="#707070FF"/>
+            </svg>
+        </button>
+        <a href="#top" class="header__nav__logo">
+            Aimakeup
+        </a>
+        <span class="header__nav-item" id="header__main-button">
                 Home
             </span>
-            <span class="header__nav-item" id="header__services-button">
+        <span class="header__nav-item" id="header__services-button">
                 Services
             </span>
-            <span class="header__nav-item" id="header__works-button">
+        <span class="header__nav-item" id="header__works-button">
                 Portfolio
             </span>
-<!--            <span class="header__nav-item" id="header__salon-button">-->
-<!--                Салон-->
-<!--            </span>-->
-            <span class="header__nav-item" id="header__about-me-button">
+        <!--            <span class="header__nav-item" id="header__salon-button">-->
+        <!--                Салон-->
+        <!--            </span>-->
+        <span class="header__nav-item" id="header__about-me-button">
                 About
             </span>
-            <span class="header__nav-item" id="header__feedback-button">
+        <span class="header__nav-item" id="header__feedback-button">
                 Contacts
             </span>
-        </nav>
-    </header>
-    <main class="opened" id="main__main">
-        <section class="main__about" id="main__about">
-            <div class="container">
-                <div class="main__about__description">
-                    <h1>AiMakeup</h1>
-                    <h2>Надежный специалист</h2>
-                    <p>
-                        Aimakeup к вашим услугам. Высокое качество сервиса, которое я предлагаю своим клиентам, —
-                        результат долгих лет усердной работы. Любовь к красоте и присущий мне перфекционизм обусловили
-                        мое увлечение индустрией красоты, которое переросло в призвание и профессию.
-                        Я горжусь тем, что могу предложить клиентам все самое лучшее из мира красоты,
-                        эстетики и косметологии. Ознакомьтесь с моими услугами и спецпредложениями
-                        и запишитесь на консультацию. Если вам нужно знать больше, свяжитесь со мной.
-                    </p>
-                </div>
-                <img class="main__about__image" src="images/main/works/photo-5.jpg" alt="me"/>
-            </div>
-        </section>
-        <section class="main__services" id="main__services">
-            <h1>Наши услуги</h1>
-            <div class="container">
-                <div class="main__services-item">
-                    <img src="images/main/services-1.webp" alt="1"/>
-                    <div class="main__services__description">
-                        <h3>
-                            Подиумный макияж
-                        </h3>
-                        <p>
-                            1 час
-                        </p>
-                        <p>
-                            3000 сомов
-                        </p>
-                    </div>
-                </div>
-                <div class="main__services-item">
-                    <img src="images/main/services-2.webp" alt="1"/>
-                    <div class="main__services__description">
-                        <h3>
-                            Подиумный макияж
-                        </h3>
-                        <p>
-                            1 час
-                        </p>
-                        <p>
-                            3000 сомов
-                        </p>
-                    </div>
-                </div>
-                <div class="main__services-item">
-                    <img src="images/main/services-3.webp" alt="1"/>
-                    <div class="main__services__description">
-                        <h3>
-                            Подиумный макияж
-                        </h3>
-                        <p>
-                            1 час
-                        </p>
-                        <p>
-                            3000 сомов
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-<!--        <section class="main__salon" id="main__salon">-->
-<!--            <div class="container">-->
-<!--                <div class="main__salon__description">-->
-<!--                    <h1>-->
-<!--                        Салон-->
-<!--                    </h1>-->
-<!--                    <p>-->
-<!--                        Наш салон красоты — лучший в Нью-Йорке, и мы всегда готовы помочь вам выглядеть на все сто-->
-<!--                        в особых случаях. Каждая прическа и макияж, которые мы создаем, индивидуальны для вас.-->
-<!--                    </p>-->
-<!--                </div>-->
-<!--                <div class="main__salon__media">-->
-<!--                    <img src="images/main/salon/salon-1.jpg" alt="1">-->
-<!--&lt;!&ndash;                    <img src="images/main/salon/salon-2.jpg" class="lower" alt="1">&ndash;&gt;-->
-<!--                </div>-->
-<!--                <div class="main__salon__description">-->
-<!--                    <p>-->
-<!--                        Наши мастера могут выполнить множество стилей макияжа: естественный макияж, вечерний,-->
-<!--                        редакционный и омолаживающий. Наши мастера могут выполнить множество стилей макияжа:-->
-<!--                        естественный макияж, вечерний, редакционный и омолаживающий. Мы также предлагаем услуги-->
-<!--                        свадебного макияжа и прически для свадеб любого размера.-->
-<!--                        Каждая участница вашей свадебной вечеринки может иметь уникальный макияж и прическу.-->
-<!--                    </p>-->
-<!--                </div>-->
-<!--                <div class="main__salon__media">-->
-<!--                    <img src="images/main/salon/salon-3.jpg" alt="1">-->
-<!--                    <img src="images/main/salon/salon-4.jpg" alt="1">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </section>-->
-        <section class="works opened" id="main__works">
-            <div class="container">
-                <h1>
-                    Наши работы
-                </h1>
-                <div class="works__image-wrapper">
-                    <img src="images/main/works/photo-1.jpg" alt="work">
-                </div>
-                <div class="works__image-wrapper">
-                    <img src="images/main/works/photo-2.jpg" alt="work">
-                </div>
-                <div class="works__image-wrapper">
-                    <img src="images/main/works/photo-3.jpg" alt="work">
-                </div>
-                <div class="works__image-wrapper">
-                    <img src="images/main/works/photo-4.jpg" alt="work">
-                </div>
-                <div class="works__image-wrapper">
-                    <img src="images/main/works/photo-5.jpg" alt="work">
-                </div>
-                <div class="works__image-wrapper">
-                    <img src="images/main/works/photo-6.jpg" alt="work">
-                </div>
-                <div class="works__image-wrapper">
-                    <img src="images/main/works/photo-7.jpg" alt="work">
-                </div>
-                <div class="works__image-wrapper">
-                    <img src="images/main/works/photo-8.jpg" alt="work">
-                </div>
-                <div class="works__image-wrapper">
-                    <img src="images/main/works/photo-9.jpg" alt="work">
-                </div>
-                <div class="works__image-wrapper">
-                    <img src="images/main/works/photo-10.jpg" alt="work">
-                </div>
-                <div class="works__image-wrapper">
-                    <img src="images/main/works/photo-11.jpg" alt="work">
-                </div>
-                <div class="works__image-wrapper">
-                    <img src="images/main/works/photo-12.jpg" alt="work">
-                </div>
-                <div class="works__image-wrapper">
-                    <img src="images/main/works/photo-13.jpg" alt="work">
-                </div>
-                <div class="works__image-wrapper">
-                    <img src="images/main/works/photo-14.jpg" alt="work">
-                </div>
-                <div class="works__image-wrapper">
-                    <img src="images/main/works/photo-15.jpg" alt="work">
-                </div>
-            </div>
-        </section>
-        <section class="main__about-me" id="main__about-me">
-            <div class="container">
-                <div class="main__about-me__description">
-                    <h1>
-                        Обо мне
-                    </h1>
-                    <h2>
-                        Только самое лучшее для вас
-                    </h2>
-                    <p>
-                        Меня с детства увлекало это занятие — я всегда восхищалась профессионалами,
-                        которые впоследствии стали для меня ролевыми моделями.
-                        Мне посчастливилось превратить мечту детства в успешную карьеру.
-                        Я оказываю профессиональные услуги в г.Бишкек,
-                        помогая своим клиентам выглядеть неотразимо и чувствовать себя уверенно с 2000 года.
-                        Мои отличительные качества как профессионала — перфекционизм,
-                        доступность и использование только лучшего оборудования и средств.
-                        Я работаю быстро и качественно и всегда добиваюсь идеального результата,
-                        поэтому клиенты приходят ко мне вновь и вновь.
-                        Если вас заинтересовали мои услуги и опыт работы, пожалуйста, свяжитесь со мной,
-                        чтобы узнать больше.
-                    </p>
-                </div>
-                <div class="main__about-me__media">
-                    <img src="images/main/me.webp" alt="me">
-                </div>
-            </div>
-        </section>
-        <div class="feedback opened" id=main__feedback>
-            <div class="container">
-                <img src="images/main/works/photo-10.jpg" alt="me">
-                <div class="feedback__content">
-                    <h1>
-                        INQUIRE
-                    </h1>
-                    <h2>
-                        I'd love to chat! Please submit the contact form below and I'll be in touch soon.
-                    </h2>
-                    <form>
-                        <input type="text" id="feedback__name" placeholder="Имя">
-                        <label for="feedback__name"></label>
-
-                        <input type="text" id="feedback__email" placeholder="e-mail">
-                        <label for="feedback__email"></label>
-
-                        <input type="text" id="feedback__location" placeholder="Адрес">
-                        <label for="feedback__location"></label>
-
-                        <textarea id="feedback__message" placeholder="Ваше сообщение"></textarea>
-                        <label for="feedback__message"></label>
-                        <input type="submit">
-                    </form>
-                </div>
-            </div>
-            <div class="main__contacts__description">
-                <h3>
-                    Контактная информация
-                </h3>
-                <p class="my-address">
-
+    </nav>
+</header>
+<main class="opened" id="main__main">
+    <section class="main__about" id="main__about">
+        <div class="container">
+            <div class="main__about__description">
+                <h2>Welcome to AIMAKEUP Corp!</h2>
+                <h3>Luxury makeup and hairstyle for weddings and any occasion!</h3>
+                <p>
+                    Provided by Beauty Expert Aiyma located in New York/New Jersey , available to travel.
+                    I will help you to look unforgettable on your special day. My goal is to give you the exact look you
+                    desire.
+                    After working with women from all over the world, I can help you learn what is going to fit your
+                    beautiful face!
+                    After working together you’re going to feel like the most beautiful woman in the world!
                 </p>
-                <p class="my-tel-number">
-                    kulbarakovich@gmail.com
-                </p>
-                <p class="my-email">
-                    +996 505 117 733
-                </p>
-                <p class="my-instagram">
-                    instagram.com/kulbarakovich
-                </p>
+            </div>
+            <img class="main__about__image" src="images/main/works/photo-5.jpg" alt="me"/>
+        </div>
+    </section>
+    <section class="main__services" id="main__services">
+        <h1>Services</h1>
+        <div class="container">
+            <div class="main__services-item">
+                <img src="images/main/first.jpg" alt="1"/>
+                <div class="main__services__description">
+                    <h3>
+                        Bridal Makeup and Hairstyle
+                    </h3>
+                </div>
+            </div>
+            <div class="main__services-item">
+                <img src="images/main/second.jpg" alt="1"/>
+                <div class="main__services__description">
+                    <h3>
+                        Aiyma’s signature /Glam/soft glam/Natural Makeup look and hairstyle
+                    </h3>
+                </div>
+            </div>
+            <div class="main__services-item">
+                <img src="images/main/third.jpg" alt="1"/>
+                <div class="main__services__description">
+                    <h3>
+                        SELF MAKEUP APPLICATION CLASS 1:1
+                    </h3>
+                </div>
             </div>
         </div>
-    </main>
-    <div class="services">
+    </section>
+    <!--        <section class="main__salon" id="main__salon">-->
+    <!--            <div class="container">-->
+    <!--                <div class="main__salon__description">-->
+    <!--                    <h1>-->
+    <!--                        Салон-->
+    <!--                    </h1>-->
+    <!--                    <p>-->
+    <!--                        Наш салон красоты — лучший в Нью-Йорке, и мы всегда готовы помочь вам выглядеть на все сто-->
+    <!--                        в особых случаях. Каждая прическа и макияж, которые мы создаем, индивидуальны для вас.-->
+    <!--                    </p>-->
+    <!--                </div>-->
+    <!--                <div class="main__salon__media">-->
+    <!--                    <img src="images/main/salon/salon-1.jpg" alt="1">-->
+    <!--&lt;!&ndash;                    <img src="images/main/salon/salon-2.jpg" class="lower" alt="1">&ndash;&gt;-->
+    <!--                </div>-->
+    <!--                <div class="main__salon__description">-->
+    <!--                    <p>-->
+    <!--                        Наши мастера могут выполнить множество стилей макияжа: естественный макияж, вечерний,-->
+    <!--                        редакционный и омолаживающий. Наши мастера могут выполнить множество стилей макияжа:-->
+    <!--                        естественный макияж, вечерний, редакционный и омолаживающий. Мы также предлагаем услуги-->
+    <!--                        свадебного макияжа и прически для свадеб любого размера.-->
+    <!--                        Каждая участница вашей свадебной вечеринки может иметь уникальный макияж и прическу.-->
+    <!--                    </p>-->
+    <!--                </div>-->
+    <!--                <div class="main__salon__media">-->
+    <!--                    <img src="images/main/salon/salon-3.jpg" alt="1">-->
+    <!--                    <img src="images/main/salon/salon-4.jpg" alt="1">-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </section>-->
+    <section class="works opened" id="main__works">
         <div class="container">
-            <div class="services__item" id="services__item-0">
-                <img src="images/main/services-1.webp" alt="1"/>
-                <div class="services__item__description">
-                    <h3>
-                        Подиумный макияж
-                    </h3>
-                    <p>
-                        1 час
-                    </p>
-                    <p>
-                        3000 сомов
-                    </p>
-                    <h4>
-                        Описание услуги
-                    </h4>
-                    <p>
-                        Подиумный макияж — это услуга, которой вы можете побаловать себя или подругу.
-                        Будь то для особого случая или просто потому, что хочется перемен, —
-                        в любом случае, я обеспечу именно тот результат, которого вы ждете.
-                        Свяжитесь со мной, чтобы забронировать время. Вы не пожалеете.
-                    </p>
-                    <a class="call-button">
-                        Позвонить
-                    </a>
-                </div>
+            <h1>
+                Наши работы
+            </h1>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_1" alt="work">
             </div>
-            <div class="services__item" id="services__item-1">
-                <img src="images/main/services-2.webp" alt="1"/>
-                <div class="services__item__description">
-                    <h3>
-                        Подиумный макияж
-                    </h3>
-                    <p>
-                        1 час
-                    </p>
-                    <p>
-                        3000 сомов
-                    </p>
-                    <h4>
-                        Описание услуги
-                    </h4>
-                    <p>
-                        Подиумный макияж — это услуга, которой вы можете побаловать себя или подругу.
-                        Будь то для особого случая или просто потому, что хочется перемен, —
-                        в любом случае, я обеспечу именно тот результат, которого вы ждете.
-                        Свяжитесь со мной, чтобы забронировать время. Вы не пожалеете.
-                    </p>
-                    <a class="call-button">
-                        Позвонить
-                    </a>
-                </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_2" alt="work">
             </div>
-            <div class="services__item" id="services__item-2">
-                <img src="images/main/services-3.webp" alt="1"/>
-                <div class="services__item__description">
-                    <h3>
-                        Подиумный макияж
-                    </h3>
-                    <p>
-                        1 час
-                    </p>
-                    <p>
-                        3000 сомов
-                    </p>
-                    <h4>
-                        Описание услуги
-                    </h4>
-                    <p>
-                        Подиумный макияж — это услуга, которой вы можете побаловать себя или подругу.
-                        Будь то для особого случая или просто потому, что хочется перемен, —
-                        в любом случае, я обеспечу именно тот результат, которого вы ждете.
-                        Свяжитесь со мной, чтобы забронировать время. Вы не пожалеете.
-                    </p>
-                    <a class="call-button">
-                        Позвонить
-                    </a>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_3" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_4" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_5" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_6" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_7" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_8" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_9" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_10" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_11" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_12" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_14" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_15" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_16" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_17" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_18" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_19" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_20" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_21" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_22" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_23" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_24" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_25" alt="work">
+            </div>
+            <div class="works__image-wrapper">
+                <img src="images/main/works_img/work_26" alt="work">
+            </div>
+        </div>
+    </section>
+    <section class="main__about-me" id="main__about-me">
+        <div class="container">
+            <div class="main__about-me__description">
+                <h1>
+                    About me
+                </h1>
+                <!--                <h2>-->
+                <!--                    Только самое лучшее для вас-->
+                <!--                </h2>-->
+                <p>
+                    Hey Beautiful! My name is Aiyma. I am a professional Makeup Artist &amp; Hairstylist! I am obsessed
+                    with
+                    beauty and love everything about it! I started doing my makeup when I was 13 years old and since
+                    that
+                    moment I haven’t parted with makeup. As a child when I saw any makeup products, I put everything on
+                    my face- the bigger the better, and yes, I always spent all my money to buy new cosmetics :) I loved
+                    the
+                    way how makeup can emphasize natural beauty and hide imperfections.
+                    My passion brought me to New York, now I am glamming hundreds of women around the world! My
+                    specialty now is focusing on bridal, engagement, special occasion makeup and hairstyling!
+                    Some of my experience includes:
+                </p>
+            </div>
+            <div class="main__about-me__media">
+                <img src="images/main/works/about.jpg" alt="me">
+            </div>
+        </div>
+    </section>
+    <div class="feedback opened" id=main__feedback>
+        <div class="container">
+            <img src="images/main/works/photo-10.jpg" alt="me">
+            <div class="feedback__content">
+                <h1>
+                    Contact form
+                </h1>
+                <h2>
+                    I'd love to chat! Please submit the contact form below and I'll be in touch soon.
+                </h2>
+                <form>
+                    <input type="text" id="feedback__name" placeholder="Name">
+                    <label for="feedback__name"></label>
+
+                    <input type="text" id="feedback__email" placeholder="e-mail">
+                    <label for="feedback__email"></label>
+
+                    <!--                    <input type="text" id="feedback__location" placeholder="Адрес">-->
+                    <!--                    <label for="feedback__location"></label>-->
+
+                    <textarea id="feedback__message" placeholder="Your message"></textarea>
+                    <label for="feedback__message"></label>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+        <div class="main__contacts__description">
+            <h3>
+                Contacts
+            </h3>
+            <p class="my-address">
+
+            </p>
+            <p class="my-tel-number">
+                aimakeupnyc@gmail.com
+            </p>
+            <p class="my-email">
+                +1 (646) 361-9261
+            </p>
+            <p class="my-instagram">
+                <a href="https://www.instagram.com/aiymamuanyc/">instagram</a>
+            </p>
+        </div>
+    </div>
+</main>
+<div class="services">
+    <div class="container">
+        <div class="services__item" id="services__item-0">
+            <img src="images/main/first.jpg" alt="1"/>
+            <div class="services__item__description">
+                <h3>
+                    Bridal Makeup and Hairstyle
+                </h3>
+
+                <br>
+
+                <p>Congratulations on your Big Day! </p>
+                <br>
+                <p>For your convenience I provide a package service which includes Bridal Makeup and Hairstyle!</p>
+                <br>
+                <p>Bridesmaid makeup and hairstyle also can be provided!</p>
+                <br>
+                <p>All you must do get in touch with me:</p>
+                <br>
+                <p>1)Send me an email with all details about your wedding including a date, location, services, time
+                    and how many people will need beauty services</p>
+                <br>
+                <p>2) Bridal trial is very important for those who want a particular look, to be sure of the exact look
+                    you are going to have on your special day! </p>
+                <br>
+                <p>3)After I will send you a contract to fill out, and a deposit will be needed to reserve a
+                    booking!</p>
+                <br>
+                <p>Can’t wait to make you most beautiful Bride to be!</p>
+                <a class="call-button">
+                    Contact
+                </a>
+            </div>
+        </div>
+        <div class="services__item" id="services__item-1">
+            <img src="images/main/second.jpg" alt="1"/>
+            <div class="services__item__description">
+                <h3>
+                    Aiyma’s signature /Glam/soft glam/Natural Makeup look and hairstyle
+                </h3>
+
+                <br>
+
+                <p>
+                    If you need Makeup/Hairstyle for any occasion, send me an email including a date, location and time
+                    to be ready at!
+                </p>
+
+                <br>
+
+                <p>Can’t wait to glam you up!</p>
+
+                <a class="call-button">
+                    Позвонить
+                </a>
+            </div>
+        </div>
+        <div class="services__item" id="services__item-2">
+            <img src="images/main/third.jpg" alt="1"/>
+            <div class="services__item__description">
+                <h3>
+                    SELF MAKEUP APPLICATION CLASS 1:1
+                </h3>
+                <div>
+                    <p>Due to many requests, I have launched my Author’s Self makeup application class to help girls how
+                        to apply makeup on themselves and choose the right products!
+                        In my individual </p>
+                    <br>
+                    <p>SELF MAKEUP APPLICATION CLASS I will teach you:</p>
+                    <p>��How to do Natural makeup look for everyday </p>
+                    <p>��How to do Glam makeup look for going out</p>
+                    <p>��I will help you to organize your makeup kit</p>
+                    <p>��We will select makeup products, that are right for you according your skin type </p>
+                    <p>��We will reveal secrets of perfect contouring </p>
+                    <p>��I will teach you how to apply eyeliner </p>
+                    <p>��Will help you to pick the right brushes </p>
+                    <p>⚜️Makeup products and Brushes will be provided⚜️</p>
+                    <p>Send me an email to get more details about my class</p>
                 </div>
+                <a class="call-button">
+                    Contact
+                </a>
             </div>
         </div>
     </div>
+</div>
 <!--    <section class="main__contacts" id="main__contacts">-->
 <!--        <div class="container">-->
 <!--            <div class="main__contacts__media">-->
@@ -387,15 +411,20 @@
 <!--            </div>-->
 <!--        </div>-->
 <!--    </section>-->
-    <footer>
-        <div class="container">
+<footer>
+    <div class="container">
+        <a href="#top">
             <h3>
                 Aimakeup
             </h3>
-            <p>
-                г. Бишкек 2022
-            </p>
-        </div>
-    </footer>
+        </a>
+        <p>
+            © 2022 NovaSoft
+        </p>
+        <!--        <p>-->
+        <!--            г. Бишкек 2022-->
+        <!--        </p>-->
+    </div>
+</footer>
 </body>
 </html>
